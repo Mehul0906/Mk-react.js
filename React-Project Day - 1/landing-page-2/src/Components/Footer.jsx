@@ -1,6 +1,6 @@
 function Landing() {
   return (
-    <div style={{width: "100%",backgroundColor:"orange" }}>
+    <div className="Footer-Main">
     <div style={{width:"80%",margin:"auto",padding:"30px 20px"}}>
     <div style={{display:"flex",justifyContent:"space-between",textAlign:"start"}} className="footer-ul-li">
      <ul>

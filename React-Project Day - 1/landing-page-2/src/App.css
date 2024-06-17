@@ -4,6 +4,11 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+.Footer-Main
+{
+  width: 100%;
+  background-color: rgb(212, 212, 212);
+}
 .footer-ul-li ul li
 {
   list-style: none;
@@ -11,7 +16,7 @@
 .footer-ul-li ul li a
 {
   text-decoration: none;
-  color: white;
+  color: black;
 }
  /* .footer-first {
   display: flex;
