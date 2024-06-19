@@ -21,8 +21,10 @@ function Counter() {
   return (
     <div>
       <body>
+
       <h1 style={{textAlign:"center",color:"white"}}>Counter App</h1>
     <div className="main">
+      {/* create a h1 tab and create a 3 btn */}
       <h1>Counter: {value}</h1>
       <button className="custom-btn btn-14" id="First-btn" disabled={value == 0} onClick={() => setvalue(value - 1)}>
         -1
@@ -44,6 +46,3 @@ function Counter() {
   );
 }
 export default Counter;
-// today i am telling about my project counter
-// when we click the button + button and the value as been +  and the value as been 2 any number has been divide by 2 the value is even and prime numeber is true 
-// when we click the button - button and the value as been - and the value as been 3 any number has been not  divide by 2 the value is odd and prime numeber is true 
