@@ -17,6 +17,7 @@ function App() {
         <div key={post.id} className="Post">
           <h2>{post.title}</h2>
           <p>{post.body}</p>
+           {/* Create a button and name it getpost then fetch data from help of api  */}
         </div>
       ))}
     </>
@@ -32,6 +33,7 @@ function App() {
         </div>
         <div className="posts-container">
           <Postcard />
+          {/* key then use map method then show it then data should be shown on onclick of button */}
         </div>
       </div>
     </body>
@@ -40,4 +42,3 @@ function App() {
 
 export default App;
 
-// Create a button and name it getpost then fetch data from help of api key then use map method then show it then data should be shown on onclick of button
