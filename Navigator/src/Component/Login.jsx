@@ -51,8 +51,18 @@ const Login = () => {
       <h1>Login Form</h1><br /><br /><br />
       <input type="email" onChange={(e)=>setemail(e.target.value)} placeholder='Please Enter Your Email' style={{padding:"10px 22px",borderRadius:"5px",border:"1px solid grey"}} required/><br /><br />
       <input type="password" onChange={(e)=>setpassword(e.target.value)} placeholder='Please Enter Your Password' style={{padding:"10px 22px",borderRadius:"5px",border:"1px solid grey"}} required/><br /><br /><br />
-      <button disabled={!isFormValid()} onClick={handleclick} style={{margin:"0 10px"}}>Submit</button>
-      <button onClick={Logout} style={{margin:"0 10px"}}>Logout</button>
+      <button disabled={!isFormValid()} onClick={handleclick} style={{margin:"10px"}}>
+  <span class="shadow"></span>
+  <span class="edge"></span>
+  <span class="front text"> Submit
+  </span>
+</button>
+<button onClick={Logout}>
+  <span class="shadow"></span>
+  <span class="edge"></span>
+  <span class="front text"> Log out
+  </span>
+</button>
     </form>
     </div>
   )
@@ -64,45 +74,4 @@ export default Login
 
 
 
-
-
-// import axios from 'axios'
-// import React, { useState } from 'react'
-
-// const Login = () => {
-//     const [email,setemail]=useState("")
-//     const [password,setpassword]=useState("")
-
-//     const handleclick=(e)=>{
-//         e.preventDefault()
-//         let userdata={
-//             email,
-//             password
-//         }
-
-//         axios.post("https://reqres.in/api/login",userdata)
-//         .then((res)=>{
-//             let tokenfromreqres= res.data.token
-//             localStorage.setItem("token",tokenfromreqres)
-//         })
-//         .catch((err)=>console.log(err))
-//     }
-//     const logOut=()=>{
-//       localStorage.removeItem("token")
-//     }
-
-//   return (
-//     <div>
-//      <form action="" style={{boxShadow:"rgba(20, 100, 111, 0.2) 0px 7px 29px 0px",height:"450px",width:"380px",margin:"6% auto"}}><br />
-//       <h1>Login Form</h1><br /><br /><br />
-//      <input type="email" placeholder='Enter Your Email' onChange={(e)=>setemail(e.target.value)}  style={{padding:"10px 22px",borderRadius:"5px",border:"1px solid grey"}} required/><br /><br />
-//       <input type="password" onChange={(e)=>setpassword(e.target.value)}   placeholder='Enter Your Password' style={{padding:"10px 22px",borderRadius:"5px",border:"1px solid grey"}} required/><br /><br /><br />
-//       <button onClick={handleclick} style={{margin:"0 10px"}}>Submit</button>
-//       <button onClick={logOut} style={{margin:"0 10px"}}>Logout</button>
-//      </form>
-//     </div>
-//   )
-// }
-
-// export default Login
 
