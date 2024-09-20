@@ -1,3 +1,5 @@
+78.
++ 0
 import ProductCard from "./ProductCard";
 
 const ProductsTable = ({ data }) => {

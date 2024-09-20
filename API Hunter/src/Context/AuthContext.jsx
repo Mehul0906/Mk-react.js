@@ -1,7 +1,3 @@
-// function AuthContextProvider() {
-// }
-// export default AuthContextProvider;
-
 
 import { createContext, useState } from "react";
 
