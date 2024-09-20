@@ -16,7 +16,6 @@
   transition: all 0.3s ease;
 }
 
-/* Styling for counter buttons */
 .counter-buttons {
   display: flex;
   justify-content: center;
